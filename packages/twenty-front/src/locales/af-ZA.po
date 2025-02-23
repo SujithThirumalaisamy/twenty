@@ -113,6 +113,10 @@ msgstr "Aktiewe API-sleutels geskep deur jou of jou span."
 msgid "Add"
 msgstr "Voeg by"
 
+#: src/modules/settings/security/components/approvedAccessDomains/SettingsApprovedAccessDomainsListCard.tsx
+msgid "Add Approved Access Domain"
+msgstr ""
+
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectFields.tsx
 msgid "Add Field"
 msgstr "Voeg veld by"
@@ -121,7 +125,7 @@ msgstr "Voeg veld by"
 msgid "Add object"
 msgstr "Voeg objek by"
 
-#: src/modules/settings/security/components/SettingsSSOIdentitiesProvidersListCard.tsx
+#: src/modules/settings/security/components/SSO/SettingsSSOIdentitiesProvidersListCard.tsx
 msgid "Add SSO Identity Provider"
 msgstr "Voeg SSO-identiteitsverskaffer by"
 
@@ -171,19 +175,19 @@ msgstr "Almal ({relationRecordsCount})"
 msgid "All roles"
 msgstr "Alle rolle"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow logins through Google's single sign-on functionality."
 msgstr "Laat aanmeldings toe deur Google se 'enkel-aanteken' funksionaliteit."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow logins through Microsoft's single sign-on functionality."
 msgstr "Laat aanmeldings toe deur Microsoft se 'enkel-aanteken' funksionaliteit."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow the invitation of new users by sharing an invite link."
 msgstr "Laat die uitnodiging van nuwe gebruikers toe deur 'n uitnodigingskakel te deel."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow users to sign in with an email and password."
 msgstr "Laat toe dat gebruikers aanmeld met 'n e-pos en wagwoord."
 
@@ -198,6 +202,10 @@ msgstr "'n Opsionele beskrywing"
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
 msgid "and"
 msgstr "en"
+
+#: src/pages/settings/security/SettingsSecurity.tsx
+msgid "Anyone with an email address at these domains is allowed to sign up for this workspace."
+msgstr ""
 
 #: src/pages/onboarding/ChooseYourPlan.tsx
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
@@ -228,6 +236,10 @@ msgstr "API Naam (Enkelvoudig)"
 #: src/pages/settings/profile/appearance/components/SettingsExperience.tsx
 msgid "Appearance"
 msgstr "Voorkoms"
+
+#: src/pages/settings/security/SettingsSecurity.tsx
+msgid "Approved Email Domain"
+msgstr ""
 
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Arabic"
@@ -274,7 +286,7 @@ msgstr "Toewysing"
 msgid "At least 8 characters long."
 msgstr "Ten minste 8 karakters lank."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "At least one authentication method must be enabled"
 msgstr "Ten minste een magtiging metode moet geaktiveer word"
 
@@ -717,6 +729,10 @@ msgstr "Vertoon as relatiewe datum"
 msgid "Domain"
 msgstr "Domein"
 
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Domain added successfully."
+msgstr ""
+
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Dutch"
 msgstr "Nederlands"
@@ -753,6 +769,10 @@ msgstr "Redigeer jou subdomein naam of stel 'n persoonlike domein in."
 #: src/pages/auth/PasswordReset.tsx
 msgid "Email"
 msgstr "E-pos"
+
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Email can not be empty"
+msgstr ""
 
 #: src/pages/onboarding/ChooseYourPlan.tsx
 msgid "Email integration"
@@ -1040,13 +1060,18 @@ msgstr "Instansies"
 msgid "Integrations"
 msgstr "Integrasies"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Invalid auth provider"
 msgstr "Ongeldig outentiekasieverskaffer"
 
 #: src/pages/settings/workspace/SettingsDomain.tsx
-msgid "Invalid custom domain. Custom domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
-msgstr "Ongeldige persoonlike domein. Persoonlike domeine moet korter as 256 karakters wees, kan nie IP-adresse wees nie, mag geen spasies hê nie, mag nie enige spesiale karakters soos _~`!@#$%^*()=+{}[]|\\;:'\",<>/? bevat nie en mag nie begin of eindig met 'n '-' karakter nie."
+#~ msgid "Invalid custom domain. Custom domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
+#~ msgstr "Ongeldige persoonlike domein. Persoonlike domeine moet korter as 256 karakters wees, kan nie IP-adresse wees nie, mag geen spasies hê nie, mag nie enige spesiale karakters soos _~`!@#$%^*()=+{}[]|\\;:'\",<>/? bevat nie en mag nie begin of eindig met 'n '-' karakter nie."
+
+#: src/pages/settings/workspace/SettingsDomain.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Invalid domain. Domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
+msgstr ""
 
 #: src/modules/settings/profile/components/ChangePassword.tsx
 msgid "Invalid email"
@@ -1073,7 +1098,7 @@ msgstr "Nooi per e-pos"
 msgid "Invite by link"
 msgstr "Nooi per skakel"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Invite by Link"
 msgstr "Nooi per Skakel"
 
@@ -1261,6 +1286,10 @@ msgstr "Nuwe {capitalizedObjectNameSingular}"
 msgid "New account"
 msgstr "Nuwe rekening"
 
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "New Approved Access Domain"
+msgstr ""
+
 #: src/pages/settings/data-model/SettingsObjectDetailPage.tsx
 msgid "New Field"
 msgstr "Nuwe Veld"
@@ -1292,6 +1321,10 @@ msgstr "Nuwe rekord"
 #~ msgid "New Role"
 #~ msgstr "New Role"
 
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+msgid "New SSO provider"
+msgstr ""
+
 #: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhooksNew.tsx
 #~ msgid "New Webhook"
 #~ msgstr "New Webhook"
@@ -1319,6 +1352,10 @@ msgstr "Geen gekoppelde rekening"
 #: src/pages/settings/roles/components/RoleAssignment.tsx
 msgid "No more members to assign"
 msgstr "Geen meer lede om toe te wys nie"
+
+#: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
+msgid "No records found"
+msgstr ""
 
 #: src/pages/settings/roles/components/RoleWorkspaceMemberPickerDropdownContent.tsx
 #~ msgid "No Result"
@@ -1365,6 +1402,10 @@ msgstr "\"Van die gebaande pad af\""
 msgid "Open command menu"
 msgstr "Maak opdragkieslys oop"
 
+#: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownViewSettingsOpenInContent.tsx
+msgid "Open in"
+msgstr ""
+
 #: src/modules/object-metadata/components/NavigationDrawerOpenedSection.tsx
 msgid "Opened"
 msgstr "Oopgemaak"
@@ -1388,7 +1429,7 @@ msgstr "Ander"
 msgid "Page Not Found"
 msgstr "Bladsy Nie Gevind"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Password"
 msgstr "Wagwoord"
 
@@ -1614,6 +1655,8 @@ msgstr "Soek vir 'n objek..."
 msgid "Search records"
 msgstr "Soek rekords"
 
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
@@ -1961,8 +2004,8 @@ msgstr "Gebruik ons API of voeg jou eerste {objectLabel} handleiding by"
 msgid "User"
 msgstr "Gebruiker"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "User is not logged in"
 msgstr "Gebruiker is nie aangeteken nie"
 
@@ -2025,6 +2068,8 @@ msgstr "Werksvloei kan nie getoets word nie"
 #: src/pages/settings/SettingsBilling.tsx
 #: src/pages/settings/Releases.tsx
 #: src/pages/settings/workspace/SettingsDomain.tsx
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/pages/settings/roles/SettingsRoles.tsx
 #: src/pages/settings/integrations/SettingsIntegrations.tsx
@@ -2065,6 +2110,10 @@ msgstr "Skryf 'n beskrywing"
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx
 msgid "yes"
 msgstr "ja"
+
+#: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
+msgid "You are not allowed to create records in this object"
+msgstr ""
 
 #: src/pages/settings/SettingsBilling.tsx
 msgid "You will be charged immediately for the full year."

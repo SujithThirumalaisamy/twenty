@@ -74,6 +74,10 @@ msgstr "Sluit je aan bij je team op Twenty"
 msgid "Password updated"
 msgstr "Wachtwoord bijgewerkt"
 
+#: src/emails/validate-approved-access-domain.email.tsx
+msgid "Please validate this domain to allow users with <0>@{domain}</0> email addresses to join your workspace without requiring an invitation."
+msgstr ""
+
 #: src/emails/password-reset-link.email.tsx
 msgid "Reset"
 msgstr "Resetten"
@@ -109,6 +113,11 @@ msgstr "Deze link is slechts geldig voor de komende {duration}. Als de link niet
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "Update your subscription"
 msgstr "Werk uw abonnement bij"
+
+#: src/emails/validate-approved-access-domain.email.tsx
+#: src/emails/validate-approved-access-domain.email.tsx
+msgid "Validate domain"
+msgstr ""
 
 #: src/emails/send-email-verification-link.email.tsx
 msgid "Verify Email"

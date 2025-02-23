@@ -74,6 +74,10 @@ msgstr "Tham gia vào đội ngũ của bạn trên Twenty"
 msgid "Password updated"
 msgstr "Mật khẩu đã được cập nhật"
 
+#: src/emails/validate-approved-access-domain.email.tsx
+msgid "Please validate this domain to allow users with <0>@{domain}</0> email addresses to join your workspace without requiring an invitation."
+msgstr ""
+
 #: src/emails/password-reset-link.email.tsx
 msgid "Reset"
 msgstr "Đặt lại"
@@ -109,6 +113,11 @@ msgstr "Liên kết này chỉ có hiệu lực trong thời gian {duration} k�
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "Update your subscription"
 msgstr "Cập nhật gói đăng ký của bạn"
+
+#: src/emails/validate-approved-access-domain.email.tsx
+#: src/emails/validate-approved-access-domain.email.tsx
+msgid "Validate domain"
+msgstr ""
 
 #: src/emails/send-email-verification-link.email.tsx
 msgid "Verify Email"

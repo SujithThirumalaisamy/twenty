@@ -74,6 +74,10 @@ msgstr "Uneix-te al teu equip a Twenty"
 msgid "Password updated"
 msgstr "Contrasenya actualitzada"
 
+#: src/emails/validate-approved-access-domain.email.tsx
+msgid "Please validate this domain to allow users with <0>@{domain}</0> email addresses to join your workspace without requiring an invitation."
+msgstr ""
+
 #: src/emails/password-reset-link.email.tsx
 msgid "Reset"
 msgstr "Restableix"
@@ -109,6 +113,11 @@ msgstr "Aquest enllaç només és vàlid durant els propers {duration}. Si l'enl
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "Update your subscription"
 msgstr "Actualitza la teva subscripció"
+
+#: src/emails/validate-approved-access-domain.email.tsx
+#: src/emails/validate-approved-access-domain.email.tsx
+msgid "Validate domain"
+msgstr ""
 
 #: src/emails/send-email-verification-link.email.tsx
 msgid "Verify Email"

@@ -113,6 +113,10 @@ msgstr "あなたまたはチームが作成したアクティブなAPIキー。
 msgid "Add"
 msgstr "追加"
 
+#: src/modules/settings/security/components/approvedAccessDomains/SettingsApprovedAccessDomainsListCard.tsx
+msgid "Add Approved Access Domain"
+msgstr ""
+
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectFields.tsx
 msgid "Add Field"
 msgstr "フィールドを追加"
@@ -121,7 +125,7 @@ msgstr "フィールドを追加"
 msgid "Add object"
 msgstr "オブジェクトを追加"
 
-#: src/modules/settings/security/components/SettingsSSOIdentitiesProvidersListCard.tsx
+#: src/modules/settings/security/components/SSO/SettingsSSOIdentitiesProvidersListCard.tsx
 msgid "Add SSO Identity Provider"
 msgstr "SSOアイデンティティプロバイダーを追加"
 
@@ -171,19 +175,19 @@ msgstr "すべて ({relationRecordsCount})"
 msgid "All roles"
 msgstr "すべてのロール"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow logins through Google's single sign-on functionality."
 msgstr "Googleのシングルサインオン機能でログインを許可する。"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow logins through Microsoft's single sign-on functionality."
 msgstr "Microsoftのシングルサインオン機能でログインを許可する。"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow the invitation of new users by sharing an invite link."
 msgstr "招待リンクを共有して新規ユーザーを招待する。"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow users to sign in with an email and password."
 msgstr "ユーザーがメールとパスワードでサインインできるようにする。"
 
@@ -198,6 +202,10 @@ msgstr "任意の説明"
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
 msgid "and"
 msgstr "および"
+
+#: src/pages/settings/security/SettingsSecurity.tsx
+msgid "Anyone with an email address at these domains is allowed to sign up for this workspace."
+msgstr ""
 
 #: src/pages/onboarding/ChooseYourPlan.tsx
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
@@ -228,6 +236,10 @@ msgstr "API名<b>（</b>単数形<b>）</b>"
 #: src/pages/settings/profile/appearance/components/SettingsExperience.tsx
 msgid "Appearance"
 msgstr "外観"
+
+#: src/pages/settings/security/SettingsSecurity.tsx
+msgid "Approved Email Domain"
+msgstr ""
 
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Arabic"
@@ -274,7 +286,7 @@ msgstr "割り当て"
 msgid "At least 8 characters long."
 msgstr "8文字以上。"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "At least one authentication method must be enabled"
 msgstr "少なくとも1つの認証方法を有効にする必要があります"
 
@@ -717,6 +729,10 @@ msgstr "相対日付で表示"
 msgid "Domain"
 msgstr "ドメイン"
 
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Domain added successfully."
+msgstr ""
+
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Dutch"
 msgstr "オランダ語"
@@ -753,6 +769,10 @@ msgstr "サブドメイン名を編集するか、カスタムドメインを設
 #: src/pages/auth/PasswordReset.tsx
 msgid "Email"
 msgstr "メール"
+
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Email can not be empty"
+msgstr ""
 
 #: src/pages/onboarding/ChooseYourPlan.tsx
 msgid "Email integration"
@@ -1040,13 +1060,18 @@ msgstr "インスタンス"
 msgid "Integrations"
 msgstr "統合"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Invalid auth provider"
 msgstr "無効な認証プロバイダー"
 
 #: src/pages/settings/workspace/SettingsDomain.tsx
-msgid "Invalid custom domain. Custom domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
-msgstr "無効なカスタムドメインです。カスタムドメインは256文字以下で、IPアドレスであってはならず、空白を含むことはできず、_~`!@#$%^*()=+{}[]|\\;:'\",<>/? のような特殊文字を含むことはできず、'-'文字で始まったり終わったりすることはできません。"
+#~ msgid "Invalid custom domain. Custom domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
+#~ msgstr "無効なカスタムドメインです。カスタムドメインは256文字以下で、IPアドレスであってはならず、空白を含むことはできず、_~`!@#$%^*()=+{}[]|\\;:'\",<>/? のような特殊文字を含むことはできず、'-'文字で始まったり終わったりすることはできません。"
+
+#: src/pages/settings/workspace/SettingsDomain.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Invalid domain. Domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
+msgstr ""
 
 #: src/modules/settings/profile/components/ChangePassword.tsx
 msgid "Invalid email"
@@ -1073,7 +1098,7 @@ msgstr "メールで招待"
 msgid "Invite by link"
 msgstr "リンクで招待"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Invite by Link"
 msgstr "リンクで招待"
 
@@ -1261,6 +1286,10 @@ msgstr "新しい{capitalizedObjectNameSingular}"
 msgid "New account"
 msgstr "新しいアカウント"
 
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "New Approved Access Domain"
+msgstr ""
+
 #: src/pages/settings/data-model/SettingsObjectDetailPage.tsx
 msgid "New Field"
 msgstr "\\\\u65b0\\\\u898f\\\\u30d5\\\\u30a3\\\\u30fc\\\\u30eb\\\\u30c9"
@@ -1292,6 +1321,10 @@ msgstr "新しいレコード"
 #~ msgid "New Role"
 #~ msgstr "New Role"
 
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+msgid "New SSO provider"
+msgstr ""
+
 #: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhooksNew.tsx
 #~ msgid "New Webhook"
 #~ msgstr "New Webhook"
@@ -1319,6 +1352,10 @@ msgstr "接続されたアカウントがありません"
 #: src/pages/settings/roles/components/RoleAssignment.tsx
 msgid "No more members to assign"
 msgstr "これ以上のメンバーを割り当てることはできません"
+
+#: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
+msgid "No records found"
+msgstr ""
 
 #: src/pages/settings/roles/components/RoleWorkspaceMemberPickerDropdownContent.tsx
 #~ msgid "No Result"
@@ -1365,6 +1402,10 @@ msgstr "道を外れた"
 msgid "Open command menu"
 msgstr "コマンドメニューを開く"
 
+#: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownViewSettingsOpenInContent.tsx
+msgid "Open in"
+msgstr ""
+
 #: src/modules/object-metadata/components/NavigationDrawerOpenedSection.tsx
 msgid "Opened"
 msgstr "開いた"
@@ -1388,7 +1429,7 @@ msgstr "その他"
 msgid "Page Not Found"
 msgstr "ページが見つかりません"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Password"
 msgstr "パスワード"
 
@@ -1614,6 +1655,8 @@ msgstr "オブジェクトを検索..."
 msgid "Search records"
 msgstr "レコードを検索"
 
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
@@ -1961,8 +2004,8 @@ msgstr "APIを使用するか、最初の{objectLabel}を手動で追加して�
 msgid "User"
 msgstr "ユーザー"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "User is not logged in"
 msgstr "ユーザーがログインしていません"
 
@@ -2025,6 +2068,8 @@ msgstr "ワークフローをテストできません"
 #: src/pages/settings/SettingsBilling.tsx
 #: src/pages/settings/Releases.tsx
 #: src/pages/settings/workspace/SettingsDomain.tsx
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/pages/settings/roles/SettingsRoles.tsx
 #: src/pages/settings/integrations/SettingsIntegrations.tsx
@@ -2065,6 +2110,10 @@ msgstr "説明を記入"
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx
 msgid "yes"
 msgstr "はい"
+
+#: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
+msgid "You are not allowed to create records in this object"
+msgstr ""
 
 #: src/pages/settings/SettingsBilling.tsx
 msgid "You will be charged immediately for the full year."

@@ -74,6 +74,10 @@ msgstr "הצטרף לצוות שלך ב-Twenty"
 msgid "Password updated"
 msgstr "הסיסמה עודכנה"
 
+#: src/emails/validate-approved-access-domain.email.tsx
+msgid "Please validate this domain to allow users with <0>@{domain}</0> email addresses to join your workspace without requiring an invitation."
+msgstr ""
+
 #: src/emails/password-reset-link.email.tsx
 msgid "Reset"
 msgstr "איפוס"
@@ -109,6 +113,11 @@ msgstr "הקישור הזה תקף רק ל-{duration} הבאים. אם הקיש�
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "Update your subscription"
 msgstr "עדכן את המנוי שלך"
+
+#: src/emails/validate-approved-access-domain.email.tsx
+#: src/emails/validate-approved-access-domain.email.tsx
+msgid "Validate domain"
+msgstr ""
 
 #: src/emails/send-email-verification-link.email.tsx
 msgid "Verify Email"

@@ -113,6 +113,10 @@ msgstr "由您或您的团队创建的活跃 API 密钥。"
 msgid "Add"
 msgstr "添加"
 
+#: src/modules/settings/security/components/approvedAccessDomains/SettingsApprovedAccessDomainsListCard.tsx
+msgid "Add Approved Access Domain"
+msgstr ""
+
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectFields.tsx
 msgid "Add Field"
 msgstr "添加字段"
@@ -121,7 +125,7 @@ msgstr "添加字段"
 msgid "Add object"
 msgstr "添加对象"
 
-#: src/modules/settings/security/components/SettingsSSOIdentitiesProvidersListCard.tsx
+#: src/modules/settings/security/components/SSO/SettingsSSOIdentitiesProvidersListCard.tsx
 msgid "Add SSO Identity Provider"
 msgstr "添加 SSO 身份提供商"
 
@@ -171,19 +175,19 @@ msgstr "全部 ({relationRecordsCount})"
 msgid "All roles"
 msgstr "所有角色"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow logins through Google's single sign-on functionality."
 msgstr "允许通过 Google 的单点登录功能登录。"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow logins through Microsoft's single sign-on functionality."
 msgstr "允许通过微软的单点登录功能登录。"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow the invitation of new users by sharing an invite link."
 msgstr "允许通过共享邀请链接来邀请新用户。"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow users to sign in with an email and password."
 msgstr "允许用户使用电子邮件和密码登录。"
 
@@ -198,6 +202,10 @@ msgstr "可选描述"
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
 msgid "and"
 msgstr "和"
+
+#: src/pages/settings/security/SettingsSecurity.tsx
+msgid "Anyone with an email address at these domains is allowed to sign up for this workspace."
+msgstr ""
 
 #: src/pages/onboarding/ChooseYourPlan.tsx
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
@@ -228,6 +236,10 @@ msgstr "API 名称（单数）"
 #: src/pages/settings/profile/appearance/components/SettingsExperience.tsx
 msgid "Appearance"
 msgstr "外观"
+
+#: src/pages/settings/security/SettingsSecurity.tsx
+msgid "Approved Email Domain"
+msgstr ""
 
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Arabic"
@@ -274,7 +286,7 @@ msgstr "分配"
 msgid "At least 8 characters long."
 msgstr "至少 8 个字符。"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "At least one authentication method must be enabled"
 msgstr "必须启用至少一种身份验证方法"
 
@@ -717,6 +729,10 @@ msgstr "显示为相对日期"
 msgid "Domain"
 msgstr "域"
 
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Domain added successfully."
+msgstr ""
+
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Dutch"
 msgstr "荷兰语"
@@ -753,6 +769,10 @@ msgstr "编辑子域名或设置自定义域名。"
 #: src/pages/auth/PasswordReset.tsx
 msgid "Email"
 msgstr "电子邮件"
+
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Email can not be empty"
+msgstr ""
 
 #: src/pages/onboarding/ChooseYourPlan.tsx
 msgid "Email integration"
@@ -1040,13 +1060,18 @@ msgstr "实例"
 msgid "Integrations"
 msgstr "集成"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Invalid auth provider"
 msgstr "无效的身份验证提供商"
 
 #: src/pages/settings/workspace/SettingsDomain.tsx
-msgid "Invalid custom domain. Custom domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
-msgstr "无效的自定义域名。自定义域名的长度必须少于256个字符，不能是IP地址，不能包含空格，不能包含任何特殊字符，如 _~`!@#$%^*()=+{}[]|\\;:'\",<>/?，并且不能以'-'字符开头或结尾。"
+#~ msgid "Invalid custom domain. Custom domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
+#~ msgstr "无效的自定义域名。自定义域名的长度必须少于256个字符，不能是IP地址，不能包含空格，不能包含任何特殊字符，如 _~`!@#$%^*()=+{}[]|\\;:'\",<>/?，并且不能以'-'字符开头或结尾。"
+
+#: src/pages/settings/workspace/SettingsDomain.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Invalid domain. Domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
+msgstr ""
 
 #: src/modules/settings/profile/components/ChangePassword.tsx
 msgid "Invalid email"
@@ -1073,7 +1098,7 @@ msgstr "通过电子邮件邀请"
 msgid "Invite by link"
 msgstr "通过链接邀请"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Invite by Link"
 msgstr "通过链接邀请"
 
@@ -1261,6 +1286,10 @@ msgstr "新{capitalizedObjectNameSingular}"
 msgid "New account"
 msgstr "新账户"
 
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "New Approved Access Domain"
+msgstr ""
+
 #: src/pages/settings/data-model/SettingsObjectDetailPage.tsx
 msgid "New Field"
 msgstr "新字段"
@@ -1292,6 +1321,10 @@ msgstr "新记录"
 #~ msgid "New Role"
 #~ msgstr "New Role"
 
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+msgid "New SSO provider"
+msgstr ""
+
 #: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhooksNew.tsx
 #~ msgid "New Webhook"
 #~ msgstr "New Webhook"
@@ -1319,6 +1352,10 @@ msgstr "无连接账户"
 #: src/pages/settings/roles/components/RoleAssignment.tsx
 msgid "No more members to assign"
 msgstr "没有更多成员可分配"
+
+#: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
+msgid "No records found"
+msgstr ""
 
 #: src/pages/settings/roles/components/RoleWorkspaceMemberPickerDropdownContent.tsx
 #~ msgid "No Result"
@@ -1365,6 +1402,10 @@ msgstr "偏离常规路线"
 msgid "Open command menu"
 msgstr "打开命令菜单"
 
+#: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownViewSettingsOpenInContent.tsx
+msgid "Open in"
+msgstr ""
+
 #: src/modules/object-metadata/components/NavigationDrawerOpenedSection.tsx
 msgid "Opened"
 msgstr "已打开"
@@ -1388,7 +1429,7 @@ msgstr "其他"
 msgid "Page Not Found"
 msgstr "页面未找到"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Password"
 msgstr "密码"
 
@@ -1614,6 +1655,8 @@ msgstr "搜索对象..."
 msgid "Search records"
 msgstr "搜索记录"
 
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
@@ -1961,8 +2004,8 @@ msgstr "使用我们的 API 或手动添加您的第一个 {objectLabel}"
 msgid "User"
 msgstr "用户"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "User is not logged in"
 msgstr "用户未登录"
 
@@ -2025,6 +2068,8 @@ msgstr "无法测试工作流"
 #: src/pages/settings/SettingsBilling.tsx
 #: src/pages/settings/Releases.tsx
 #: src/pages/settings/workspace/SettingsDomain.tsx
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/pages/settings/roles/SettingsRoles.tsx
 #: src/pages/settings/integrations/SettingsIntegrations.tsx
@@ -2065,6 +2110,10 @@ msgstr "撰写描述"
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx
 msgid "yes"
 msgstr "是"
+
+#: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
+msgid "You are not allowed to create records in this object"
+msgstr ""
 
 #: src/pages/settings/SettingsBilling.tsx
 msgid "You will be charged immediately for the full year."

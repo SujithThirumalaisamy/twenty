@@ -113,6 +113,10 @@ msgstr "Aktív API kulcsok, amelyeket te vagy a csapatod hoztatok létre."
 msgid "Add"
 msgstr "Hozzáad"
 
+#: src/modules/settings/security/components/approvedAccessDomains/SettingsApprovedAccessDomainsListCard.tsx
+msgid "Add Approved Access Domain"
+msgstr ""
+
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectFields.tsx
 msgid "Add Field"
 msgstr "Mező hozzáadása"
@@ -121,7 +125,7 @@ msgstr "Mező hozzáadása"
 msgid "Add object"
 msgstr "Objektum hozzáadása"
 
-#: src/modules/settings/security/components/SettingsSSOIdentitiesProvidersListCard.tsx
+#: src/modules/settings/security/components/SSO/SettingsSSOIdentitiesProvidersListCard.tsx
 msgid "Add SSO Identity Provider"
 msgstr "SSO Identitásszolgáltató hozzáadása"
 
@@ -171,19 +175,19 @@ msgstr "Minden ({relationRecordsCount})"
 msgid "All roles"
 msgstr "Minden szerepkör"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow logins through Google's single sign-on functionality."
 msgstr "Engedélyezze a bejelentkezéseket a Google egyszeri bejelentkezési funkcióján keresztül."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow logins through Microsoft's single sign-on functionality."
 msgstr "Engedélyezze a bejelentkezéseket a Microsoft egyszeri bejelentkezési funkcióján keresztül."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow the invitation of new users by sharing an invite link."
 msgstr "Engedélyezze az új felhasználó meghívását meghívó link megosztásával."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow users to sign in with an email and password."
 msgstr "Engedélyezze a felhasználóknak a bejelentkezést e-mail és jelszó segítségével."
 
@@ -198,6 +202,10 @@ msgstr "Egy opcionális leírás"
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
 msgid "and"
 msgstr "és"
+
+#: src/pages/settings/security/SettingsSecurity.tsx
+msgid "Anyone with an email address at these domains is allowed to sign up for this workspace."
+msgstr ""
 
 #: src/pages/onboarding/ChooseYourPlan.tsx
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
@@ -228,6 +236,10 @@ msgstr "API Név (egyes szám)"
 #: src/pages/settings/profile/appearance/components/SettingsExperience.tsx
 msgid "Appearance"
 msgstr "Megjelenés"
+
+#: src/pages/settings/security/SettingsSecurity.tsx
+msgid "Approved Email Domain"
+msgstr ""
 
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Arabic"
@@ -274,7 +286,7 @@ msgstr "Hozzárendelés"
 msgid "At least 8 characters long."
 msgstr "Legalább 8 karakter hosszú."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "At least one authentication method must be enabled"
 msgstr "Legalább egy hitelesítési módszert engedélyezni kell"
 
@@ -717,6 +729,10 @@ msgstr "Megjelen\\u00edt\\u00e9s relat\\u00edv d\\u00e1tumk\\u00e9nt"
 msgid "Domain"
 msgstr "Domain"
 
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Domain added successfully."
+msgstr ""
+
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Dutch"
 msgstr "Holland"
@@ -753,6 +769,10 @@ msgstr "Szerkeszd az aldomain nev\\u00e9t vagy \\u00e1ll\\u00edts be egyedi doma
 #: src/pages/auth/PasswordReset.tsx
 msgid "Email"
 msgstr "Email"
+
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Email can not be empty"
+msgstr ""
 
 #: src/pages/onboarding/ChooseYourPlan.tsx
 msgid "Email integration"
@@ -1040,13 +1060,18 @@ msgstr "Példányok"
 msgid "Integrations"
 msgstr "Integrációk"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Invalid auth provider"
 msgstr "Érvénytelen hitelesítési szolgáltató"
 
 #: src/pages/settings/workspace/SettingsDomain.tsx
-msgid "Invalid custom domain. Custom domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
-msgstr "Érvénytelen egyéni tartomány. Az egyéni tartományoknak 256 karakternél rövidebbnek kell lenniük, nem lehetnek IP címek, nem tartalmazhatnak szóközöket, nem tartalmazhatnak semmilyen speciális karaktereket, mint például _~`!@#$%^*()=+{}[]|\\;:'\\\",<>/? és nem kezdődhetnek vagy végződhetnek '-' karakterrel."
+#~ msgid "Invalid custom domain. Custom domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
+#~ msgstr "Érvénytelen egyéni tartomány. Az egyéni tartományoknak 256 karakternél rövidebbnek kell lenniük, nem lehetnek IP címek, nem tartalmazhatnak szóközöket, nem tartalmazhatnak semmilyen speciális karaktereket, mint például _~`!@#$%^*()=+{}[]|\\;:'\\\",<>/? és nem kezdődhetnek vagy végződhetnek '-' karakterrel."
+
+#: src/pages/settings/workspace/SettingsDomain.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Invalid domain. Domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
+msgstr ""
 
 #: src/modules/settings/profile/components/ChangePassword.tsx
 msgid "Invalid email"
@@ -1073,7 +1098,7 @@ msgstr "Meghívás emailben"
 msgid "Invite by link"
 msgstr "Meghívás linken keresztül"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Invite by Link"
 msgstr "Meghívás Linken Keresztül"
 
@@ -1261,6 +1286,10 @@ msgstr "Új {capitalizedObjectNameSingular}"
 msgid "New account"
 msgstr "Új fiók"
 
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "New Approved Access Domain"
+msgstr ""
+
 #: src/pages/settings/data-model/SettingsObjectDetailPage.tsx
 msgid "New Field"
 msgstr "Új mező"
@@ -1292,6 +1321,10 @@ msgstr "Új rekord"
 #~ msgid "New Role"
 #~ msgstr "New Role"
 
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+msgid "New SSO provider"
+msgstr ""
+
 #: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhooksNew.tsx
 #~ msgid "New Webhook"
 #~ msgstr "New Webhook"
@@ -1319,6 +1352,10 @@ msgstr "Nincs csatlakoztatott fiók"
 #: src/pages/settings/roles/components/RoleAssignment.tsx
 msgid "No more members to assign"
 msgstr "Nincs több hozzárendelhető tag"
+
+#: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
+msgid "No records found"
+msgstr ""
 
 #: src/pages/settings/roles/components/RoleWorkspaceMemberPickerDropdownContent.tsx
 #~ msgid "No Result"
@@ -1365,6 +1402,10 @@ msgstr "A járatlan úton"
 msgid "Open command menu"
 msgstr "Parancsmenü megnyitása"
 
+#: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownViewSettingsOpenInContent.tsx
+msgid "Open in"
+msgstr ""
+
 #: src/modules/object-metadata/components/NavigationDrawerOpenedSection.tsx
 msgid "Opened"
 msgstr "Megnyitva"
@@ -1388,7 +1429,7 @@ msgstr "Egyéb"
 msgid "Page Not Found"
 msgstr "Az oldal nem található"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Password"
 msgstr "Jelszó"
 
@@ -1614,6 +1655,8 @@ msgstr "Objektum keresése..."
 msgid "Search records"
 msgstr "Rekordok keresése"
 
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
@@ -1961,8 +2004,8 @@ msgstr "Használja API-nkat vagy adja hozzá első {objectLabel} manuálisan"
 msgid "User"
 msgstr "Felhasználó"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "User is not logged in"
 msgstr "A felhasználó nincs bejelentkezve"
 
@@ -2025,6 +2068,8 @@ msgstr "A folyamatot nem lehet tesztelni"
 #: src/pages/settings/SettingsBilling.tsx
 #: src/pages/settings/Releases.tsx
 #: src/pages/settings/workspace/SettingsDomain.tsx
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/pages/settings/roles/SettingsRoles.tsx
 #: src/pages/settings/integrations/SettingsIntegrations.tsx
@@ -2065,6 +2110,10 @@ msgstr "Írjon leírást"
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx
 msgid "yes"
 msgstr "igen"
+
+#: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
+msgid "You are not allowed to create records in this object"
+msgstr ""
 
 #: src/pages/settings/SettingsBilling.tsx
 msgid "You will be charged immediately for the full year."

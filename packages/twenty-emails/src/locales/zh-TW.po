@@ -74,6 +74,10 @@ msgstr "加入您的團隊，使用 Twenty"
 msgid "Password updated"
 msgstr "密碼已更新"
 
+#: src/emails/validate-approved-access-domain.email.tsx
+msgid "Please validate this domain to allow users with <0>@{domain}</0> email addresses to join your workspace without requiring an invitation."
+msgstr ""
+
 #: src/emails/password-reset-link.email.tsx
 msgid "Reset"
 msgstr "重設"
@@ -109,6 +113,11 @@ msgstr "此鏈接僅在接下來的 {duration} 內有效。如果鏈接無效，
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "Update your subscription"
 msgstr "更新您的訂閱"
+
+#: src/emails/validate-approved-access-domain.email.tsx
+#: src/emails/validate-approved-access-domain.email.tsx
+msgid "Validate domain"
+msgstr ""
 
 #: src/emails/send-email-verification-link.email.tsx
 msgid "Verify Email"

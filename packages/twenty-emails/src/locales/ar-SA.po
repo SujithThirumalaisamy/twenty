@@ -74,6 +74,10 @@ msgstr "انضم إلى فريقك في Twenty"
 msgid "Password updated"
 msgstr "تم تحديث كلمة المرور"
 
+#: src/emails/validate-approved-access-domain.email.tsx
+msgid "Please validate this domain to allow users with <0>@{domain}</0> email addresses to join your workspace without requiring an invitation."
+msgstr ""
+
 #: src/emails/password-reset-link.email.tsx
 msgid "Reset"
 msgstr "إعادة تعيين"
@@ -109,6 +113,11 @@ msgstr "هذا الرابط صالح فقط للمدة {duration} القادمة
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "Update your subscription"
 msgstr "تحديث الاشتراك"
+
+#: src/emails/validate-approved-access-domain.email.tsx
+#: src/emails/validate-approved-access-domain.email.tsx
+msgid "Validate domain"
+msgstr ""
 
 #: src/emails/send-email-verification-link.email.tsx
 msgid "Verify Email"

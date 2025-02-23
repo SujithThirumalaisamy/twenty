@@ -74,6 +74,10 @@ msgstr "Twenty에서 팀에 합류하세요"
 msgid "Password updated"
 msgstr "비밀번호가 업데이트되었습니다"
 
+#: src/emails/validate-approved-access-domain.email.tsx
+msgid "Please validate this domain to allow users with <0>@{domain}</0> email addresses to join your workspace without requiring an invitation."
+msgstr ""
+
 #: src/emails/password-reset-link.email.tsx
 msgid "Reset"
 msgstr "초기화"
@@ -109,6 +113,11 @@ msgstr "이 링크는 다음 {duration} 동안만 유효합니다. 링크가 작
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "Update your subscription"
 msgstr "구독을 업데이트하세요"
+
+#: src/emails/validate-approved-access-domain.email.tsx
+#: src/emails/validate-approved-access-domain.email.tsx
+msgid "Validate domain"
+msgstr ""
 
 #: src/emails/send-email-verification-link.email.tsx
 msgid "Verify Email"

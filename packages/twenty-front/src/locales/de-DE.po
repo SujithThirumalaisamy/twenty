@@ -113,6 +113,10 @@ msgstr "Aktive API-Schlüssel, die von Ihnen oder Ihrem Team erstellt wurden."
 msgid "Add"
 msgstr "Hinzufügen"
 
+#: src/modules/settings/security/components/approvedAccessDomains/SettingsApprovedAccessDomainsListCard.tsx
+msgid "Add Approved Access Domain"
+msgstr ""
+
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectFields.tsx
 msgid "Add Field"
 msgstr "Feld hinzufügen"
@@ -121,7 +125,7 @@ msgstr "Feld hinzufügen"
 msgid "Add object"
 msgstr "Objekt hinzufügen"
 
-#: src/modules/settings/security/components/SettingsSSOIdentitiesProvidersListCard.tsx
+#: src/modules/settings/security/components/SSO/SettingsSSOIdentitiesProvidersListCard.tsx
 msgid "Add SSO Identity Provider"
 msgstr "SSO-Identitätsanbieter hinzufügen"
 
@@ -171,19 +175,19 @@ msgstr "Alle ({relationRecordsCount})"
 msgid "All roles"
 msgstr "Alle Rollen"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow logins through Google's single sign-on functionality."
 msgstr "Anmeldungen über Google Single Sign-On zulassen."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow logins through Microsoft's single sign-on functionality."
 msgstr "Anmeldungen über Microsoft Single Sign-On zulassen."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow the invitation of new users by sharing an invite link."
 msgstr "Einladung neuer Benutzer durch Teilen eines Einladungslinks zulassen."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow users to sign in with an email and password."
 msgstr "Benutzern erlauben, sich mit E-Mail und Passwort anzumelden."
 
@@ -198,6 +202,10 @@ msgstr "Eine optionale Beschreibung"
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
 msgid "and"
 msgstr "und"
+
+#: src/pages/settings/security/SettingsSecurity.tsx
+msgid "Anyone with an email address at these domains is allowed to sign up for this workspace."
+msgstr ""
 
 #: src/pages/onboarding/ChooseYourPlan.tsx
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
@@ -228,6 +236,10 @@ msgstr "API-Name (Einzahl)"
 #: src/pages/settings/profile/appearance/components/SettingsExperience.tsx
 msgid "Appearance"
 msgstr "Erscheinungsbild"
+
+#: src/pages/settings/security/SettingsSecurity.tsx
+msgid "Approved Email Domain"
+msgstr ""
 
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Arabic"
@@ -274,7 +286,7 @@ msgstr "Zuweisung"
 msgid "At least 8 characters long."
 msgstr "Mindestens 8 Zeichen lang."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "At least one authentication method must be enabled"
 msgstr "Mindestens eine Authentifizierungsmethode muss aktiviert sein"
 
@@ -717,6 +729,10 @@ msgstr "Als relatives Datum anzeigen"
 msgid "Domain"
 msgstr "Domäne"
 
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Domain added successfully."
+msgstr ""
+
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Dutch"
 msgstr "Niederl\\u00e4ndisch"
@@ -753,6 +769,10 @@ msgstr "Bearbeiten Sie den Namen Ihrer Subdomain oder legen Sie eine benutzerdef
 #: src/pages/auth/PasswordReset.tsx
 msgid "Email"
 msgstr "E-Mail"
+
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Email can not be empty"
+msgstr ""
 
 #: src/pages/onboarding/ChooseYourPlan.tsx
 msgid "Email integration"
@@ -1040,13 +1060,18 @@ msgstr "Instanzen"
 msgid "Integrations"
 msgstr "Integrationen"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Invalid auth provider"
 msgstr "Ungültiger Authentifizierungsanbieter"
 
 #: src/pages/settings/workspace/SettingsDomain.tsx
-msgid "Invalid custom domain. Custom domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
-msgstr "Ung\\u00fcltige benutzerdefinierte Domain. Benutzerdefinierte Domains m\\u00fcssen k\\u00fcrzer als 256 Zeichen sein, d\\u00fcrfen keine IP-Adressen sein, d\\u00fcrfen keine Leerzeichen enthalten, d\\u00fcrfen keine Sonderzeichen wie _~`!@#$%^*()=+{}[]|\\\\;:'\\\",<>/? enthalten und d\\u00fcrfen nicht mit einem '-' Zeichen beginnen oder enden."
+#~ msgid "Invalid custom domain. Custom domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
+#~ msgstr "Ung\\u00fcltige benutzerdefinierte Domain. Benutzerdefinierte Domains m\\u00fcssen k\\u00fcrzer als 256 Zeichen sein, d\\u00fcrfen keine IP-Adressen sein, d\\u00fcrfen keine Leerzeichen enthalten, d\\u00fcrfen keine Sonderzeichen wie _~`!@#$%^*()=+{}[]|\\\\;:'\\\",<>/? enthalten und d\\u00fcrfen nicht mit einem '-' Zeichen beginnen oder enden."
+
+#: src/pages/settings/workspace/SettingsDomain.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Invalid domain. Domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
+msgstr ""
 
 #: src/modules/settings/profile/components/ChangePassword.tsx
 msgid "Invalid email"
@@ -1073,7 +1098,7 @@ msgstr "Per E-Mail einladen"
 msgid "Invite by link"
 msgstr "Per Link einladen"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Invite by Link"
 msgstr "Per Link einladen"
 
@@ -1261,6 +1286,10 @@ msgstr "Neue {capitalizedObjectNameSingular}"
 msgid "New account"
 msgstr "Neues Konto"
 
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "New Approved Access Domain"
+msgstr ""
+
 #: src/pages/settings/data-model/SettingsObjectDetailPage.tsx
 msgid "New Field"
 msgstr "Neues Feld"
@@ -1292,6 +1321,10 @@ msgstr "Neuer Datensatz"
 #~ msgid "New Role"
 #~ msgstr "New Role"
 
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+msgid "New SSO provider"
+msgstr ""
+
 #: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhooksNew.tsx
 #~ msgid "New Webhook"
 #~ msgstr "New Webhook"
@@ -1319,6 +1352,10 @@ msgstr "Kein verbundenes Konto"
 #: src/pages/settings/roles/components/RoleAssignment.tsx
 msgid "No more members to assign"
 msgstr "Keine Mitglieder mehr zuzuweisen"
+
+#: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
+msgid "No records found"
+msgstr ""
 
 #: src/pages/settings/roles/components/RoleWorkspaceMemberPickerDropdownContent.tsx
 #~ msgid "No Result"
@@ -1365,6 +1402,10 @@ msgstr "Abseits der ausgetretenen Pfade"
 msgid "Open command menu"
 msgstr "Befehlsmenü öffnen"
 
+#: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownViewSettingsOpenInContent.tsx
+msgid "Open in"
+msgstr ""
+
 #: src/modules/object-metadata/components/NavigationDrawerOpenedSection.tsx
 msgid "Opened"
 msgstr "Geöffnet"
@@ -1388,7 +1429,7 @@ msgstr "Andere"
 msgid "Page Not Found"
 msgstr "Seite nicht gefunden"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Password"
 msgstr "Passwort"
 
@@ -1614,6 +1655,8 @@ msgstr "Objekt suchen..."
 msgid "Search records"
 msgstr "Datensätze suchen"
 
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
@@ -1961,8 +2004,8 @@ msgstr "Verwenden Sie unsere API oder fügen Sie Ihr erstes {objectLabel} manuel
 msgid "User"
 msgstr "Benutzer"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "User is not logged in"
 msgstr "Benutzer ist nicht eingeloggt"
 
@@ -2025,6 +2068,8 @@ msgstr "Workflow kann nicht getestet werden"
 #: src/pages/settings/SettingsBilling.tsx
 #: src/pages/settings/Releases.tsx
 #: src/pages/settings/workspace/SettingsDomain.tsx
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/pages/settings/roles/SettingsRoles.tsx
 #: src/pages/settings/integrations/SettingsIntegrations.tsx
@@ -2065,6 +2110,10 @@ msgstr "Beschreibung schreiben"
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx
 msgid "yes"
 msgstr "ja"
+
+#: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
+msgid "You are not allowed to create records in this object"
+msgstr ""
 
 #: src/pages/settings/SettingsBilling.tsx
 msgid "You will be charged immediately for the full year."

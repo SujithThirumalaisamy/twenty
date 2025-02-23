@@ -53,7 +53,8 @@ msgstr "24시간 ({hour24Label})"
 
 #: src/pages/onboarding/CreateWorkspace.tsx
 msgid "A shared environment where you will be able to manage your customer relations with your team."
-msgstr "\\\n"
+msgstr ""
+"\\\n"
 "팀과 함께 고객 관계를 관리할 수 있는 공유 환경입니다."
 
 #: src/pages/settings/roles/components/RolePermissions.tsx
@@ -114,6 +115,10 @@ msgstr "본인 또는 팀이 생성한 활성 API 키입니다."
 msgid "Add"
 msgstr "추가"
 
+#: src/modules/settings/security/components/approvedAccessDomains/SettingsApprovedAccessDomainsListCard.tsx
+msgid "Add Approved Access Domain"
+msgstr ""
+
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectFields.tsx
 msgid "Add Field"
 msgstr "필드 추가"
@@ -122,7 +127,7 @@ msgstr "필드 추가"
 msgid "Add object"
 msgstr "개체 추가"
 
-#: src/modules/settings/security/components/SettingsSSOIdentitiesProvidersListCard.tsx
+#: src/modules/settings/security/components/SSO/SettingsSSOIdentitiesProvidersListCard.tsx
 msgid "Add SSO Identity Provider"
 msgstr "SSO ID 공급자 추가"
 
@@ -172,19 +177,19 @@ msgstr "전체 ({relationRecordsCount})"
 msgid "All roles"
 msgstr "모든 역할"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow logins through Google's single sign-on functionality."
 msgstr "Google의 SSO 기능을 통한 로그인 허용."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow logins through Microsoft's single sign-on functionality."
 msgstr "Microsoft의 SSO 기능을 통한 로그인 허용."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow the invitation of new users by sharing an invite link."
 msgstr "초대 링크 공유를 통한 새 사용자 초대 허용."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Allow users to sign in with an email and password."
 msgstr "이메일과 비밀번호로 로그인 허용."
 
@@ -199,6 +204,10 @@ msgstr "선택적 설명"
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
 msgid "and"
 msgstr "및"
+
+#: src/pages/settings/security/SettingsSecurity.tsx
+msgid "Anyone with an email address at these domains is allowed to sign up for this workspace."
+msgstr ""
 
 #: src/pages/onboarding/ChooseYourPlan.tsx
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
@@ -229,6 +238,10 @@ msgstr "API 이름 (단수)"
 #: src/pages/settings/profile/appearance/components/SettingsExperience.tsx
 msgid "Appearance"
 msgstr "외관"
+
+#: src/pages/settings/security/SettingsSecurity.tsx
+msgid "Approved Email Domain"
+msgstr ""
 
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Arabic"
@@ -275,7 +288,7 @@ msgstr "할당"
 msgid "At least 8 characters long."
 msgstr "최소 8자 이상."
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "At least one authentication method must be enabled"
 msgstr "하나 이상의 인증 방법이 활성화되어야 합니다"
 
@@ -718,6 +731,10 @@ msgstr "상대 날짜로 표시"
 msgid "Domain"
 msgstr "도메인"
 
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Domain added successfully."
+msgstr ""
+
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Dutch"
 msgstr "네덜란드어"
@@ -754,6 +771,10 @@ msgstr "하위 도메인 이름을 편집하거나 사용자 지정 도메인을
 #: src/pages/auth/PasswordReset.tsx
 msgid "Email"
 msgstr "이메일"
+
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Email can not be empty"
+msgstr ""
 
 #: src/pages/onboarding/ChooseYourPlan.tsx
 msgid "Email integration"
@@ -1041,13 +1062,18 @@ msgstr "인스턴스"
 msgid "Integrations"
 msgstr "통합"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Invalid auth provider"
 msgstr "잘못된 인증 제공자"
 
 #: src/pages/settings/workspace/SettingsDomain.tsx
-msgid "Invalid custom domain. Custom domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
-msgstr "잘못된 사용자 정의 도메인입니다. 사용자 정의 도메인은 길이가 256자를 넘을 수 없고, IP 주소가 될 수 없으며, 공백이 포함될 수 없고, _~`!@#$%^*()=+{}[]|\\;:'\\\",<>/?와 같은 특수 문자를 포함할 수 없으며, '-' 문자로 시작하거나 끝나선 안 됩니다."
+#~ msgid "Invalid custom domain. Custom domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
+#~ msgstr "잘못된 사용자 정의 도메인입니다. 사용자 정의 도메인은 길이가 256자를 넘을 수 없고, IP 주소가 될 수 없으며, 공백이 포함될 수 없고, _~`!@#$%^*()=+{}[]|\\;:'\\\",<>/?와 같은 특수 문자를 포함할 수 없으며, '-' 문자로 시작하거나 끝나선 안 됩니다."
+
+#: src/pages/settings/workspace/SettingsDomain.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "Invalid domain. Domains have to be smaller than 256 characters in length, cannot be IP addresses, cannot contain spaces, cannot contain any special characters such as _~`!@#$%^*()=+{}[]|\\;:'\",<>/? and cannot begin or end with a '-' character."
+msgstr ""
 
 #: src/modules/settings/profile/components/ChangePassword.tsx
 msgid "Invalid email"
@@ -1074,7 +1100,7 @@ msgstr "이메일로 초대"
 msgid "Invite by link"
 msgstr "링크로 초대"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Invite by Link"
 msgstr "링크로 초대"
 
@@ -1262,6 +1288,10 @@ msgstr "새 {capitalizedObjectNameSingular}"
 msgid "New account"
 msgstr "새 계정"
 
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
+msgid "New Approved Access Domain"
+msgstr ""
+
 #: src/pages/settings/data-model/SettingsObjectDetailPage.tsx
 msgid "New Field"
 msgstr "새 필드"
@@ -1293,6 +1323,10 @@ msgstr "새 레코드"
 #~ msgid "New Role"
 #~ msgstr "New Role"
 
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+msgid "New SSO provider"
+msgstr ""
+
 #: src/pages/settings/developers/webhooks/components/SettingsDevelopersWebhooksNew.tsx
 #~ msgid "New Webhook"
 #~ msgstr "New Webhook"
@@ -1320,6 +1354,10 @@ msgstr "연결된 계정 없음"
 #: src/pages/settings/roles/components/RoleAssignment.tsx
 msgid "No more members to assign"
 msgstr "지정할 멤버가 더 이상 없습니다"
+
+#: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
+msgid "No records found"
+msgstr ""
 
 #: src/pages/settings/roles/components/RoleWorkspaceMemberPickerDropdownContent.tsx
 #~ msgid "No Result"
@@ -1366,6 +1404,10 @@ msgstr "잘 알려지지 않은 길"
 msgid "Open command menu"
 msgstr "명령 메뉴 열기"
 
+#: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownViewSettingsOpenInContent.tsx
+msgid "Open in"
+msgstr ""
+
 #: src/modules/object-metadata/components/NavigationDrawerOpenedSection.tsx
 msgid "Opened"
 msgstr "열림"
@@ -1389,7 +1431,7 @@ msgstr "기타"
 msgid "Page Not Found"
 msgstr "페이지를 찾을 수 없음"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "Password"
 msgstr "비밀번호"
 
@@ -1615,6 +1657,8 @@ msgstr "개체 검색..."
 msgid "Search records"
 msgstr "레코드 검색"
 
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
@@ -1962,8 +2006,8 @@ msgstr "API를 사용하거나 첫 번째 {objectLabel}을 수동으로 추가�
 msgid "User"
 msgstr "사용자"
 
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
-#: src/modules/settings/security/components/SettingsSecurityOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
+#: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
 msgid "User is not logged in"
 msgstr "사용자가 로그인하지 않았습니다"
 
@@ -2026,6 +2070,8 @@ msgstr "워크플로를 테스트할 수 없음"
 #: src/pages/settings/SettingsBilling.tsx
 #: src/pages/settings/Releases.tsx
 #: src/pages/settings/workspace/SettingsDomain.tsx
+#: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
+#: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
 #: src/pages/settings/security/SettingsSecurity.tsx
 #: src/pages/settings/roles/SettingsRoles.tsx
 #: src/pages/settings/integrations/SettingsIntegrations.tsx
@@ -2066,6 +2112,10 @@ msgstr "설명을 작성하세요"
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx
 msgid "yes"
 msgstr "예"
+
+#: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
+msgid "You are not allowed to create records in this object"
+msgstr ""
 
 #: src/pages/settings/SettingsBilling.tsx
 msgid "You will be charged immediately for the full year."
